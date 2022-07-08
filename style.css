@@ -1,0 +1,86 @@
+@font-face {
+    font-family: pop;
+    src: url(font/Poppins-Regular.ttf);
+}
+body{
+    height: 800px;
+    background-image: linear-gradient(to top left, rgb(63, 7, 63),  rgb(81, 0, 128), rgb(119, 0, 255));
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff00ff;
+    font-sTyle: oblique;
+    font-weight: 2px;
+
+}
+.cal{
+    display: flex;
+    flex-direction: column;
+}
+
+.in{
+    display: inline-flex;
+    gap: 5px;
+}
+.cal-card{
+    display: flex;
+    background-color: rgb(67, 25, 92);
+    width: 50%;
+    height: 60%;
+    justify-content: center;
+    align-items: center; 
+}
+h3{
+    margin: 45px 0 0 0 ;
+    text-transform: capitalize;
+}
+
+.dd-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: 17px;
+    padding: 0 0 0 10px;
+}
+.info:hover .dd-content{
+    display: block;
+}
+input{
+    padding: 6px;
+    border-radius: 6px;
+    border: 1px solid rgb(67, 25, 92) ;
+    text-transform: capitalize;
+}
+#nme{
+    text-transform: capitalize;
+}
+h1{
+    text-align: center;
+}
+h2{
+    margin: 70px 0 0 0;
+}
+img{
+    margin: 5px 0 5px 0;
+}
+button{
+    margin: 20px;
+    width: 60%;
+    padding: 11px;
+    background-color: #ff00ff;
+    border: none;
+    border-radius: 10px;
+    margin-left: 35px;
+    font-family: pop;
+    text-transform: uppercase;
+}
+@media screen and (max-width: 475px) {
+    .cal-card{
+        width: 85%;
+        height: 60%;
+    }
+}
