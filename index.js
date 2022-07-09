@@ -37,6 +37,10 @@ function bandVal(){
     else if (cup == 6){
         size.innerHTML = "You're a " + band + "DDD/F"
     }
+    else{
+        size.innerHTML = "Oops! Something's wrong :("
+    }
+
 
 
 }
